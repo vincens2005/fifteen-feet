@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Fifteen Feet
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height" />
+		<meta name="title" content="Fifteen Feet - Bypass Paywalls">
+		<meta name="description" content="Bypass paywalls on any article. Sometimes you just don't want to pay for someone's subscription">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+			:root {
+				--theme-button-color: #1b776a;
+				--theme-muted-highlight: #456a65;
+				--theme-background-color: #2c2c2c;
+				--theme-lighter-color: #3e3e3e;
+				--theme-medium-color: #2e2e2e;
+				--theme-darker-color: #202020;
+				--theme-muted-text: #b9b9b9;
+			
+				--theme-text-color: #fff;
+				--theme-button-text-color: #fff;
+				--theme-link-color: #619eb3;
+				--theme-dim-shadow-color: #212121;
+				--theme-shadow-color: #161616;
+				--theme-background: var(--theme-background-color);
+				
+				--theme-main-font: 'Noto Sans', sans-serif;
+				--theme-main-font-size: 1rem;
+			}
+			
+			html {
+				scroll-behavior: smooth;
+				scrollbar-width: thin;
+				overflow-x: hidden;
+			}
+			
+			body {
+				background: var(--theme-background);
+				color: var(--theme-text-color);
+				font-family: var(--theme-main-font);
+				font-size: var(--theme-main-font-size);
+				margin: 0;
+			}
+			
+			input, button, a {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				padding-left: 0;
+			}
+			
+			button {
+				background: var(--theme-button-color);
+				user-select: none;
+				cursor: pointer;
+				border-radius: 3px;
+				margin: auto;
+				text-align: center;
+				text-decoration: none;
+				color: var(--theme-button-text-color);
+				width: auto;
+				vertical-align: middle;
+				display: inline-block;
+				padding: 5px 20px 5px 20px;
+				transition: 0.3s;
+				border: none;
+				font-size: var(--theme-main-font-size);
+			}
+			
+			button:hover {
+				filter: brightness(1.15);
+			}
+			
+			button:active {
+				transform: scale(0.93);
+				transition: 0.1s;
+			}
+			
+			input {
+				background: transparent;
+				border-top: none;
+				border-left: none;
+				outline: 0;
+				border-radius: 0;
+				border-right: none;
+				border-bottom: 1px solid var(--theme-muted-text);
+				color: var(--theme-text-color);
+				font-size: calc(var(--theme-main-font-size) * 1.25);
+				transition: 0.3s;
+				width: max(250px, 40vw);
+				margin-right: max(5px, 0.8vw);
+			}
+			
+			.form-div {
+				background: var(--theme-darker-color);
+				padding: 10px;
+				border-radius: 5px;
+				margin-bottom: 30vh;
+			}
+			
+			.center {
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				justify-content: center;
+			}
+			
+			.header {
+				text-align: center;
+				margin-top: 10px;
+			}
+			
+			.nonflexcenter {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.sect {
+				max-width: clamp(500px, 80vw, 1000px);
+			}
+			
+			.nonflexcenter.sect {
+				padding: 15px;
+			}
+			
+			a {
+				cursor: pointer;
+				font-weight: bold;
+				color: var(--theme-link-color);
+				text-decoration: none;
+				transition: 0.1s;
+			}
+			
+			a:hover {
+				filter: brightness(1.1);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="header center">
+			<h1>
+				Here's an even bigger ladder
+			</h1>
+		</div>
+		<div class="form-div center sect">
+			<form action="/proxy">
+				<input name="q" placeholder="put a paywall here...">
+				<button type="submit">
+					bypass
+				</button>
+			</form>
+		</div>
+		<div class="nonflexcenter sect">
+			<h2>
+				What?
+			</h2>
+			<p>
+				Get rid of annoying popups blocking you from reading websites because you're not subscribed.
+			</p>
+			<h2>
+				Why?
+			</h2>
+			<p>
+				Because <a href="https://12ft.io/" target="_blank">12ft.io</a> isn't working for some sites anymore, and I think paywalls are cringe.
+			</p>
+			<h2>
+				How?
+			</h2>
+			<p>
+				Websites are optimized to show up in search results, so they don't paywall content for web crawlers. This way, the crawler will have access to the site's full text, and the page will show up in more results. We take advantage of this by simply <i>pretending to be Google's crawler</i>.			
+			</p>
+		</div>
+	</body>
+</html>

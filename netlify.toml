@@ -9,5 +9,5 @@
 	publish = "frontend/"
 
 [[edge_functions]]
-	path = "/proxy/*"
+	path = "/proxy*"
 	function = "proxy"
