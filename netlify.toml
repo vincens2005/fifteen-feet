@@ -1,0 +1,13 @@
+[build]
+	publish = "frontend/"
+
+[dev]
+	dir = "frontend/"
+	command = "live-server --port=5500 --no-browser"
+	targetPort = 5500
+	framework = "#custom"
+	publish = "frontend/"
+
+[[edge_functions]]
+	path = "/proxy/*"
+	function = "proxy"

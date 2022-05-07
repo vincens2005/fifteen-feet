@@ -1,0 +1,16 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Seattle",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "WA",
+				"name": "Washington"
+			}
+		},
+		"timestamp": 1651881722493
+	}
+}
