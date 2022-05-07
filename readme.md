@@ -1,5 +1,7 @@
 # Fifteen Feet - Bypass paywalls on news sites
 
+[fifteenfeet.netlify.app](https://fifteenfeet.netlify.app)
+
 ## What?
 
 Get rid of annoying popups blocking you from reading websites because you're not subscribed.
