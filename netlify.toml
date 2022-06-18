@@ -11,3 +11,7 @@
 [[edge_functions]]
 	path = "/proxy*"
 	function = "proxy"
+	
+[[edge_functions]]
+	path = "/cors/*"
+	function = "cors"
