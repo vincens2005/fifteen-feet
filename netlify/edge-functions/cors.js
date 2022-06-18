@@ -17,7 +17,12 @@ export default async (request, context) => {
 	let response = await fetch(req)
 	
 
-	return response;
+	return new Response(response.body, {
+		headers: {
+			"access-control-allow-origin": "*",
+			"content-type": response.headers.get("content-type")
+		}
+	});
 };
 
 // mostly stolen from https://stackoverflow.com/a/48713509/15317442
