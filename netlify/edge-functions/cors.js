@@ -1,5 +1,5 @@
 export default async (request, context) => {
-	let url = request.url.split("/proxy/");
+	let url = request.url.split("/cors/");
 	url.shift(); // remove first element
 	url = url.join(""); // combine other ones. now we've removes the first instance of /proxy/
 	url = decodeURIComponent(url);
